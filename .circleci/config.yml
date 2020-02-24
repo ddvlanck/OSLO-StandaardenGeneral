@@ -24,3 +24,12 @@ jobs:
             - links.txt
             - src/
             - raw-input/
+workflows:
+  version: 2
+  generate_documentation:
+    jobs:
+      - checkout
+      - extract-jsonld-details:
+          requires:
+            - checkout
+  
