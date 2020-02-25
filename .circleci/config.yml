@@ -18,7 +18,7 @@ jobs:
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
-            - /
+            - repositories/
   render-html:
     docker:
       - image: ddvlanck/html-page-generator:1.0

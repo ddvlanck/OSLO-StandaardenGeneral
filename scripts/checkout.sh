@@ -42,8 +42,8 @@ if cat ${PUBCONFIG} | jq -e . >/dev/null 2>&1; then
     REPOSITORY=$(_jq '.repository')
     THEME_NAME=$(echo "$REPOSITORY" | cut -d '/' -f 5)
 
-    mkdir -p $ROOTDIR/$THEME_NAME
-    git clone $REPOSITORY $ROOTDIR/$THEME_NAME
+    mkdir -p $ROOTDIR/repositories/$THEME_NAME
+    git clone $REPOSITORY $ROOTDIR/repositories/$THEME_NAME
 
   done
 else
