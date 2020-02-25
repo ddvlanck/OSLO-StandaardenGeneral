@@ -28,7 +28,7 @@ jobs:
           at: /tmp/workspace
       - run:
           name: Creating HTML pages for modified or new standards
-          run: $PWD/scripts/generator.sh
+          command: $PWD/scripts/generator.sh
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
