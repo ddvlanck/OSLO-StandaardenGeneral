@@ -18,13 +18,21 @@ jobs:
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
-            - checkouts.txt
-            - rawcheckouts.txt
             - changedstandards.json
-            - haschangedpublications.json
-            - links.txt
-            - src/
-            - raw-input/
+  render-html:
+    docker:
+      - image: terraformtestcontainerregistry.azurecr.io/oslo2/standaardenregister-generator:1.0
+    steps:
+      - checkout
+      - attach_workspace
+          at: /tmp/workspace
+      - run:
+          name: Creating HTML pages for modified or new standards
+          run: $PWD/scripts/generator.sh
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+          - html_pages/
 workflows:
   version: 2
   create_detail_page:
