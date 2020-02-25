@@ -27,8 +27,10 @@ jobs:
       - checkout
       - attach_workspace:
           at: /tmp/workspace
-      - run: |
-          'node /app/html_page_generator.js -f /tmp/workspace/repositories/OSLOthema-test/standaardenregister.json'
+      - run: chmod -R 777 $PWD/scripts
+      - run:
+          name: Creating HTML pages for modified or new standards
+          command: $PWD/scripts/generator.sh
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
