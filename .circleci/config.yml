@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: mkdir -p workspace
       - run: ls -al workspace
-      - run: $PWD/scripts/checkout.sh /tmp/workspace $PWD/config/publication.json
+      - run: $PWD/scripts/checkout.sh /tmp/workspace $PWD/standaardenregister.json
       - run: if [ -e /tmp/workspace/checkouts.txt ] ; then cat /tmp/workspace/checkouts.txt ; fi
       - run: if [ -e /tmp/workspace/rawcheckouts.txt ] ; then cat /tmp/workspace/rawcheckouts.txt ; fi
       - run: if [ -e /home/circleci/project/changes.txt ] ; then cat /home/circleci/project/changes.txt ; fi
@@ -19,17 +19,17 @@ jobs:
           paths:
             - checkouts.txt
             - rawcheckouts.txt
-            - changedpublications.json
+            - changedstandards.json
             - haschangedpublications.json
             - links.txt
             - src/
             - raw-input/
 workflows:
   version: 2
-  generate_documentation:
+  create_detail_page:
     jobs:
       - checkout
-      - extract-jsonld-details:
+      - render-html:
           requires:
             - checkout
-  
+
