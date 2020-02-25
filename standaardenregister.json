@@ -4,9 +4,14 @@
     "repository": "https://github.com/GeertThijs/TIOD-Leuven",
     "branchtag": "master",
     "name": "TIOD-IM2",
-    "filename" : "config/TIOD-IM.json",
+    "filename": "config/TIOD-IM.json",
     "dummy": "dummy011",
-    "navigation" : {
+    "navigation": {
     }
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-test",
+    "branchtag" : "master",
+    "name" : "Applicatieprofiel Test Persoon"
   }
 ]

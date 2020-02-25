@@ -8,7 +8,7 @@ ROOTDIR=$1
 mkdir -p $ROOTDIR
 curl -o $ROOTDIR/commit.json https://raw.githubusercontent.com/ddvlanck/OSLO-StandaardenGenerated/master/report/commit.json
 sleep 5s
-jq . $ROOTDIR/commit.json
+jq . "$ROOTDIR/commit.json"
 if  [ $? -eq 0 ] ; then
    COMMIT=`jq -r .commit $ROOTDIR/commit.json`
    listofchanges=$(git diff --name-only $COMMIT)
