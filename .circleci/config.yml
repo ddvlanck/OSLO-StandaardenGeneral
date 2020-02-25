@@ -21,7 +21,7 @@ jobs:
             - changedstandards.json
   render-html:
     docker:
-      - image: terraformtestcontainerregistry.azurecr.io/oslo2/standaardenregister-generator:1.0
+      - image: ddvlanck/html-page-generator:1.0
     steps:
       - checkout
       - attach_workspace:
