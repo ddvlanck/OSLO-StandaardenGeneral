@@ -4,4 +4,4 @@
 #node html_page_generator.js -f data/repositories/OSLOthema-test/standaardenregister-config.json
 
 
-node /app/html_page_generator.js -f /tmp/workspace/OSLOthema-test/standaardenregister.json
+node /app/html_page_generator.js -f /tmp/workspace/repositories/OSLOthema-test/standaardenregister.json
