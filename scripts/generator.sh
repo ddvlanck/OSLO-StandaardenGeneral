@@ -4,3 +4,5 @@
 #node html_page_generator.js -f data/repositories/OSLOthema-test/standaardenregister-config.json
 
 cat /tmp/workspace/repositories/OSLOthema-test/standaardenregister.json
+
+ls /app/
