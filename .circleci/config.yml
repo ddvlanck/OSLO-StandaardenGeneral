@@ -26,6 +26,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: /tmp/workspace
+      - run: chmod -R 777 $PWD/scripts
       - run:
           name: Creating HTML pages for modified or new standards
           command: $PWD/scripts/generator.sh
