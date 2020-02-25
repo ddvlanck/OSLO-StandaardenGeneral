@@ -12,6 +12,7 @@
   {
     "repository" : "https://github.com/ddvlanck/OSLOthema-test",
     "branchtag" : "master",
-    "name" : "Applicatieprofiel Test Persoon"
+    "name" : "Applicatieprofiel Test Persoon",
+    "commitHash" : ""
   }
 ]
