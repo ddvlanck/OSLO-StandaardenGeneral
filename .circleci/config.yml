@@ -35,6 +35,15 @@ jobs:
           root: /tmp/workspace
           paths:
           - html_pages/
+  push-to-repository:
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: chmod -R 777 $PWD/scripts
+      - run:
+          name: Pushing new or updated HTML pages to OSLO-StandaardenGenerated
+          command: $PWD/scripts/
+
 workflows:
   version: 2
   create_detail_page:
@@ -43,4 +52,6 @@ workflows:
       - render-html:
           requires:
             - checkout
-
+      - push-to-repository:
+          requires:
+            - render-html
