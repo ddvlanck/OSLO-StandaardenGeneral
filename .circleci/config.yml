@@ -36,6 +36,8 @@ jobs:
           paths:
           - html_pages/
   push-to-repository:
+    docker:
+      - image: circleci/node
     steps:
       - attach_workspace:
           at: /tmp/workspace
