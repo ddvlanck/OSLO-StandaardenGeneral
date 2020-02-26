@@ -1,4 +1,4 @@
-# OSLO-StandaardenGenerated
+# OSLO-StandaardenGeneral
 
 Contains the CircleCI configuration and the JSON file with all the OSLOthema-repositories and other info.
 
