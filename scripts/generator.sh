@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for repo in $(find ./tmp/workspace/repositories -maxdepth 1 -mindepth 1 -type d)
+for repo in $(find /tmp/workspace/repositories -maxdepth 1 -mindepth 1 -type d)
 do
   echo $repo
 done
