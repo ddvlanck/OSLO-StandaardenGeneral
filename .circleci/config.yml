@@ -55,7 +55,7 @@ jobs:
           workdir: /tmp/OSLO-Generated
           command: |
             git fetch origin
-#            git checkout -b "${CIRCLE_BRANCH}" --track "origin/${CIRCLE_BRANCH}"
+            git checkout -b "${CIRCLE_BRANCH}" --track "origin/${CIRCLE_BRANCH}"
 #            if [ "`cat /tmp/workspace/haschangedpublications.json`" == "false" ] ; then git rm -r --force * ; fi
       - run:
           name: Copy generated assets
@@ -79,7 +79,7 @@ jobs:
             git commit -m "Applying changes from newest commit " --allow-empty
 #            export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
 #            git tag "${TAG}"
-            git push --force origin master
+            git push --force "${CIRCLE_BRANCH}"
 #            git push --tags
 workflows:
   version: 2
