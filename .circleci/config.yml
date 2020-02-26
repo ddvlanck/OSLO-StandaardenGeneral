@@ -8,7 +8,7 @@ jobs:
       - run: mkdir -p workspace
       - run: ls -al workspace
       - run: chmod -R 777 $PWD/scripts
-      - run: $PWD/scripts/checkout.sh /tmp/workspace $PWD/standaardenregister.json
+      - run: $PWD/scripts/checkout.sh /tmp/workspace $PWD/config.json
       - run: if [ -e /tmp/workspace/checkouts.txt ] ; then cat /tmp/workspace/checkouts.txt ; fi
       - run: if [ -e /tmp/workspace/rawcheckouts.txt ] ; then cat /tmp/workspace/rawcheckouts.txt ; fi
       - run: if [ -e /home/circleci/project/changes.txt ] ; then cat /home/circleci/project/changes.txt ; fi
