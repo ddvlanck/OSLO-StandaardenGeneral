@@ -1,8 +1,14 @@
 #!/bin/bash
 
-for repo in $(find /tmp/workspace/repositories -maxdepth 1 -mindepth 1 -type d)
+RESULTDIR=/tmp/workspace/html_pages
+REPODIR=/tmp/workspace/repositories
+
+mkdir -p "$RESULTDIR"
+
+for repo in $(find "$REPODIR" -maxdepth 1 -mindepth 1 -type d)
 do
-  echo $repo
+  THEME_NAME=$(echo $repo | cut -d "/" -f 4 | cut -d "-" -f 2)
+  echo $THEME_NAME
 done
 
 #mkdir -p /tmp/workspace/html_pages/
