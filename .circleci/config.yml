@@ -106,3 +106,6 @@ workflows:
           requires:
             - checkout
             - markdown-to-html
+      - push-to-repository:
+          requires:
+            - render-html
