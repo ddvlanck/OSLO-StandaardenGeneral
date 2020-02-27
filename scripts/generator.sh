@@ -10,6 +10,11 @@ cd /app
 for REPO in $(find "$REPODIR" -maxdepth 1 -mindepth 1 -type d)
 do
   THEME_NAME=$(echo "$REPO" | cut -d "/" -f 5 | cut -d "-" -f 2)
-  node html_page_generator.js -f "$REPO"/config.json -o "$RESULTDIR"/"$THEME_NAME"-index.html -d "$ROOTDIR/descriptions/$THEME_NAME-description.html"
+  DESCRIPTION="$ROOTDIR/descriptions/$THEME_NAME-description.html"
+  if test -f "$DESCRIPTION" ; then
+    node html_page_generator.js -f "$REPO"/config.json -o "$RESULTDIR"/"$THEME_NAME"-index.html -d "$ROOTDIR/descriptions/$THEME_NAME-description.html"
+  else
+    node html_page_generator.js -f "$REPO"/config.json -o "$RESULTDIR"/"$THEME_NAME"-index.html
+  fi
 done
 
