@@ -79,7 +79,7 @@ jobs:
             export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
             git tag "${TAG}"
             git remote set-url origin git@github.com:ddvlanck/OSLO-StandaardenGenerated.git
-            git push --force "${CIRCLE_BRANCH}"
+            git push
             git push --tags
 workflows:
   version: 2
