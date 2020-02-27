@@ -60,7 +60,7 @@ jobs:
           name: Copy generated assets
           workdir: /tmp/workspace
           command: |
-            mkdir -p /tmp/OSLO-Generated/result
+            mkdir -p /tmp/OSLO-StandaardenGenerated/result
             if [ -d html_pages ] ; then if [ ! "$(ls -A html_pages)" ] ; then echo "directory html_pages is empty" ; else cp -R html_pages/* /tmp/OSLO-StandaardenGenerated/result ; fi fi
       #- run:
       #    name: insert the commit
