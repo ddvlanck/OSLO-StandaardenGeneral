@@ -20,6 +20,19 @@ jobs:
           paths:
             - changedstandards.json
             - repositories/
+  markdown-to-html:
+    docker:
+      - image: ddvlanck/markdown-to-html:1.0.0
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: chmod -R 777 $PWD/scripts
+      - run: $PWD/scripts/markdown-transformer.sh /tmp/workspace
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - descriptions/
   render-html:
     docker:
       - image: ddvlanck/html-page-generator:1.0.1
