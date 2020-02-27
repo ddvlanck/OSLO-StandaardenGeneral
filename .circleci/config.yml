@@ -100,8 +100,8 @@ workflows:
     jobs:
       - checkout
       - markdown-to-html:
-          - requires:
-              - checkout
+          requires:
+            - checkout
       - render-html:
           requires:
             - checkout
