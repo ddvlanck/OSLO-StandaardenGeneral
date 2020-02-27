@@ -52,7 +52,7 @@ jobs:
             git clone https://github.com/ddvlanck/OSLO-StandaardenGenerated
       - run:
           name: Clean the generated directory
-          workdir: /tmp/OSLO-Generated
+          workdir: /tmp/OSLO-StandaardenGenerated
           command: |
             git fetch origin
 #            if [ "`cat /tmp/workspace/haschangedpublications.json`" == "false" ] ; then git rm -r --force * ; fi
@@ -61,7 +61,7 @@ jobs:
           workdir: /tmp/workspace
           command: |
             mkdir -p /tmp/OSLO-Generated/pages
-            if [ -d html_pages ] ; then if [ ! "$(ls -A html_pages)" ] ; then echo "directory html_pages is empty" ; else cp -R html_pages/* /tmp/OSLO-Generated/pages ; fi fi
+            if [ -d html_pages ] ; then if [ ! "$(ls -A html_pages)" ] ; then echo "directory html_pages is empty" ; else cp -R html_pages/* /tmp/OSLO-StandaardenGenerated/result ; fi fi
       #- run:
       #    name: insert the commit
       #    command: |
