@@ -48,7 +48,7 @@ jobs:
           name: Checkout target repo
           workdir: /tmp
           command: |
-            rm -rf OSLO-Generated
+            rm -rf OSLO-StandaardenGenerated
             git clone https://github.com/ddvlanck/OSLO-StandaardenGenerated
       - run:
           name: Clean the generated directory
@@ -78,6 +78,7 @@ jobs:
             git commit -m "Applying changes from newest commit " --allow-empty
             export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
             git tag "${TAG}"
+            git remote set-url origin git@github.com:ddvlanck/OSLO-StandaardenGenerated.git
             git push --force "${CIRCLE_BRANCH}"
             git push --tags
 workflows:
