@@ -99,9 +99,13 @@ workflows:
   create_detail_page:
     jobs:
       - checkout
+      - markdown-to-html:
+          - requires:
+              - checkout
       - render-html:
           requires:
             - checkout
+            - markdown-to-html
       - push-to-repository:
           requires:
             - render-html
