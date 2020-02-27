@@ -35,7 +35,7 @@ jobs:
             - descriptions/
   render-html:
     docker:
-      - image: ddvlanck/html-page-generator:1.0.1
+      - image: ddvlanck/html-page-generator:1.1.0
     steps:
       - checkout
       - attach_workspace:
@@ -106,6 +106,6 @@ workflows:
           requires:
             - checkout
             - markdown-to-html
-      - push-to-repository:
-          requires:
-            - render-html
+#      - push-to-repository:
+#          requires:
+#            - render-html
