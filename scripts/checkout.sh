@@ -44,7 +44,8 @@ if cat ${PUBCONFIG} | jq -e . >/dev/null 2>&1; then
 
     mkdir -p $ROOTDIR/repositories/$THEME_NAME
     git clone $REPOSITORY $ROOTDIR/repositories/$THEME_NAME
-    git checkout -b standaardenregister --track "origin/standaardenregister"
+    cd "$ROOTDIR/repositories/$THEME_NAME"
+    git checkout standaardenregister
 
   done
 else
