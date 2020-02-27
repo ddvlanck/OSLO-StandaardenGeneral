@@ -69,10 +69,10 @@ jobs:
       #      echo "{\"commit\" : \"$TAG\"}" > /tmp/OSLO-Generated/report/commit.json
       - run:
           name: Push results to Github repository OSLO-Generated
-          workdir: /tmp/OSLO-Generated
+          workdir: /tmp/OSLO-StandaardenGenerated
           command: |
-            git config user.email "oslo@kb.vlaanderen.be"
-            git config user.name "Circle CI Builder"
+            git config user.email "dwight.vanlancker@hotmail.com"
+            git config user.name "ddvlanck"
             git add .
             git status
             git commit -m "Applying changes from newest commit " --allow-empty
