@@ -42,11 +42,17 @@ if cat "${PUBCONFIG}" | jq -e . >/dev/null 2>&1; then
     REPOSITORY=$(_jq '.repository')
     STATUS=$(_jq '.status')
     CONFIG=$(_jq '.configuration')
+    CONFIG_NAME=$(echo "$CONFIG" | cut -d "." -f 1)
+
     THEME_NAME=$(echo "$REPOSITORY" | cut -d '/' -f 5)
 
     mkdir -p "$ROOTDIR/repositories/$THEME_NAME"
 
-    echo "$THEME_NAME:$STATUS" >> "$ROOTDIR/status.txt"
+    ### Save the status of the standard to a text file along with its name
+    echo "$CONFIG_NAME:$STATUS" >> "$ROOTDIR/status.txt"
+
+    ### Save the configuration file for the standard to a text file along with its name
+    echo "$THEME_NAME:$CONFIG" >> "$ROOTDIR/configuration.txt"
 
     git clone "$REPOSITORY" "$ROOTDIR/repositories/$THEME_NAME"
     cd "$ROOTDIR/repositories/$THEME_NAME"

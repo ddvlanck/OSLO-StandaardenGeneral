@@ -20,6 +20,7 @@ jobs:
           paths:
             - changedstandards.json
             - status.txt
+            - configuration.txt
             - repositories/
   markdown-to-html:
     docker:
