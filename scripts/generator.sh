@@ -20,10 +20,10 @@ do
 
   if test -f "$DESCRIPTION" ; then
     echo "A description was provided for the $THEME_NAME repository"
-    node html_page_generator.js -f "$REPO/$CONFIG" -o "$RESULTDIR/$STATUS/$THEME_NAME-index.html" -t "$ROOTDIR/descriptions/$THEME_NAME-description.html"
+    node html_page_generator.js -f "$REPO/$CONFIG" -o "$RESULTDIR/$STATUS/$(echo "$CONFIG" | cut -d "." -f 1)-index.html" -t "$ROOTDIR/descriptions/$THEME_NAME-description.html"
   else
     echo "No description was provided for the $THEME_NAME repository"
-    node html_page_generator.js -f "$REPO/$CONFIG" -o "$RESULTDIR/$STATUS/$THEME_NAME-index.html"
+    node html_page_generator.js -f "$REPO/$CONFIG" -o "$RESULTDIR/$STATUS/$(echo "$CONFIG" | cut -d "." -f 1)-index.html"
   fi
 done
 
