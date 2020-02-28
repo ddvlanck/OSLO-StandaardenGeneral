@@ -40,10 +40,9 @@ if cat "${PUBCONFIG}" | jq -e . >/dev/null 2>&1; then
 
     # Get name of repository to create a directory with the same name
     REPOSITORY=$(_jq '.repository')
-    BRANCH=$(_jq '.branch')
     STATUS=$(_jq '.status')
-    TYPE=$(_jq '.branch' | cut -d "-" -f 2)
-    THEME_NAME=$(echo "$REPOSITORY" | cut -d '/' -f 5)-$TYPE
+    CONFIG=$(_jq '.configuration')
+    THEME_NAME=$(echo "$REPOSITORY" | cut -d '/' -f 5)
 
     mkdir -p "$ROOTDIR/repositories/$THEME_NAME"
 
@@ -51,7 +50,7 @@ if cat "${PUBCONFIG}" | jq -e . >/dev/null 2>&1; then
 
     git clone "$REPOSITORY" "$ROOTDIR/repositories/$THEME_NAME"
     cd "$ROOTDIR/repositories/$THEME_NAME"
-    git checkout "$BRANCH"
+    git checkout standaardenregister
 
   done
 else
