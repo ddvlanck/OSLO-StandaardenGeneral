@@ -53,6 +53,7 @@ jobs:
     docker:
       - image: circleci/node
     steps:
+      - checkout
       - attach_workspace:
           at: /tmp/workspace
       - add_ssh_keys:
