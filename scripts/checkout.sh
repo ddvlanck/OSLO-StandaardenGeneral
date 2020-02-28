@@ -40,7 +40,7 @@ if cat ${PUBCONFIG} | jq -e . >/dev/null 2>&1; then
 
     # Get name of repository to create a directory with the same name
     REPOSITORY=$(_jq '.repository')
-    TYPE=$(_jq '.status' | cut -d "-" -f 2)
+    TYPE=$(_jq '.branch' | cut -d "-" -f 2)
     THEME_NAME=$(echo "$REPOSITORY" | cut -d '/' -f 5)-$TYPE
 
     mkdir -p $ROOTDIR/repositories/$THEME_NAME
