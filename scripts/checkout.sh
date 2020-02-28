@@ -49,7 +49,7 @@ if cat "${PUBCONFIG}" | jq -e . >/dev/null 2>&1; then
 
     echo "$THEME_NAME:$STATUS" >> "$ROOTDIR/status.txt"
 
-    git clone "$REPOSITORY $ROOTDIR/repositories/$THEME_NAME"
+    git clone "$REPOSITORY" "$ROOTDIR/repositories/$THEME_NAME"
     cd "$ROOTDIR/repositories/$THEME_NAME"
     git checkout "$BRANCH"
 
