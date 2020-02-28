@@ -90,8 +90,8 @@ jobs:
           name: Push results to Github repository OSLO-Generated
           workdir: /tmp/OSLO-StandaardenGenerated
           command: |
-            git config user.email "dwight.vanlancker@hotmail.com"
-            git config user.name "ddvlanck"
+            git config user.email "vanlanckdw@aocws323"
+            git config user.name "vanlanckdw@aocws323"
             git add .
             git status
             git commit -m "Applying changes from newest commit " --allow-empty
