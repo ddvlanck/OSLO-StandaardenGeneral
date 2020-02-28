@@ -13,10 +13,10 @@ do
   DESCRIPTION="$ROOTDIR/descriptions/$THEME_NAME-description.html"
   if test -f "$DESCRIPTION" ; then
     echo "A description was provided for the $THEME_NAME repository"
-    node html_page_generator.js -f "$REPO"/config.json -o "$RESULTDIR"/"$THEME_NAME"-index.html -d "$ROOTDIR/descriptions/$THEME_NAME-description.html"
+    node html_page_generator.js -f "$REPO/config.json" -o "$RESULTDIR"/"$THEME_NAME"-index.html -t "$ROOTDIR/descriptions/$THEME_NAME-description.html"
   else
     echo "No description was provided for the $THEME_NAME repository"
-    node html_page_generator.js -f "$REPO"/config.json -o "$RESULTDIR"/"$THEME_NAME"-index.html
+    node html_page_generator.js -f "$REPO/config.json" -o "$RESULTDIR/$THEME_NAME-index.html"
   fi
 done
 
