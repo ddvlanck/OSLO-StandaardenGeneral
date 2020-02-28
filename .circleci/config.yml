@@ -63,7 +63,7 @@ jobs:
           workdir: /tmp
           command: |
             rm -rf OSLO-StandaardenGenerated
-            git clone https://github.com/ddvlanck/OSLO-StandaardenGenerated
+            git clone git@github.com:ddvlanck/OSLO-StandaardenGenerated.git
       - run:
           name: Clean the generated directory
           workdir: /tmp/OSLO-StandaardenGenerated
