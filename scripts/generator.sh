@@ -9,7 +9,7 @@ cd /app
 
 for REPO in $(find "$REPODIR" -maxdepth 1 -mindepth 1 -type d)
 do
-  THEME_NAME=$(echo "$REPO" | cut -d "/" -f 5 | cut -d "-" -f 2)
+  THEME_NAME=$(echo "$REPO" | cut -d "/" -f 5 | cut -d "-" -f 2,3)
   DESCRIPTION="$ROOTDIR/descriptions/$THEME_NAME-description.html"
   if test -f "$DESCRIPTION" ; then
     echo "A description was provided for the $THEME_NAME repository"
