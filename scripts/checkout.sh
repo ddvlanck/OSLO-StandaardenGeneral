@@ -15,7 +15,7 @@ if [ $? -eq 0 ]; then
     git show "$COMMIT:standaardenregister.json" >previous_version
     jq -s '.[0] - .[1]' standaardenregister.json previous_version >"$ROOTDIR/changedstandards.json"
     cat "$ROOTDIR/changedstandards.json"
-    echo "One or more standards were altered"
+    echo "One or more standards were modified"
   else
     cp "${PUBCONFIG}" "$ROOTDIR/changedstandards.json"
     echo "One or more files were changed, possibly a script, so a full rebuild is necessary"
