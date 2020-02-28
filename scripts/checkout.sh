@@ -31,7 +31,7 @@ fi
 
 #Process all standards that have been changed or were added
 echo "Start processing the standards"
-if cat ${PUBCONFIG} | jq -e . >/dev/null 2>&1; then
+if cat "${PUBCONFIG}" | jq -e . >/dev/null 2>&1; then
   # only iterate over those that have a repository
   for row in $(jq -r '.[] | select(.repository)  | @base64 ' "${PUBCONFIG}"); do
     _jq() {
@@ -40,13 +40,18 @@ if cat ${PUBCONFIG} | jq -e . >/dev/null 2>&1; then
 
     # Get name of repository to create a directory with the same name
     REPOSITORY=$(_jq '.repository')
+    BRANCH=$(_jq '.branch')
+    STATUS=$(_jq '.status')
     TYPE=$(_jq '.branch' | cut -d "-" -f 2)
     THEME_NAME=$(echo "$REPOSITORY" | cut -d '/' -f 5)-$TYPE
 
-    mkdir -p $ROOTDIR/repositories/$THEME_NAME
-    git clone $REPOSITORY $ROOTDIR/repositories/$THEME_NAME
+    mkdir -p "$ROOTDIR/repositories/$THEME_NAME"
+
+    echo "$THEME_NAME:$STATUS" >> "$ROOTDIR/status.txt"
+
+    git clone "$REPOSITORY $ROOTDIR/repositories/$THEME_NAME"
     cd "$ROOTDIR/repositories/$THEME_NAME"
-    git checkout standaardenregister
+    git checkout "$BRANCH"
 
   done
 else

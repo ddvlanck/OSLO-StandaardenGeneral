@@ -19,6 +19,7 @@ jobs:
           root: /tmp/workspace
           paths:
             - changedstandards.json
+            - status.txt
             - repositories/
   markdown-to-html:
     docker:
