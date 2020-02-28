@@ -14,7 +14,7 @@ jobs:
           command: ls -al /tmp/workspace/*
       - run:
           name: List all standards that have been modified
-          command: if [ -e /tmp/workspace/changedstandards.json] ; then cat /tmp/workspace/changedstandards.json ; fi
+          command: if [ -e /tmp/workspace/changedstandards.json ] ; then cat /tmp/workspace/changedstandards.json ; fi
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
