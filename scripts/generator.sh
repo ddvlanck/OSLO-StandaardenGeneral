@@ -9,7 +9,6 @@ mkdir -p "$RESULTDIR/standaard-in-ontwikkeling"
 mkdir -p "$RESULTDIR/kandidaat-standaard"
 
 mkdir -p "$RESULTDIR"
-cd /app
 
 for REPO in $(find "$REPODIR" -maxdepth 1 -mindepth 1 -type d)
 do
@@ -18,6 +17,19 @@ do
   STATUS=$(cat "$ROOTDIR/status.txt" | grep "$THEME_NAME" | cut -d ":" -f 2)
   CONFIG=$(cat "$ROOTDIR/configuration.txt" | grep "$THEME_NAME" | cut -d ":" -f 2)
 
+  ## Read the config file of every standard en change the relative links of the documents to absolute links, linked to the repository itself
+  cd /$REPODIR/$REPO
+
+  ### Presentatie values
+  if [ "$(jq '.presentatie | length' "$CONFIG") " -gt "0" ]; then
+    for k in $(jq '.presentaties | keys | .[]' "$CONFIG" ); do
+      VALUE=$(jq -r ".presentaties[$k].waarde" vocabularium-persoon.json | cut -d "/" -f 2,3)
+      jq ".presentaties[$k].waarde = https://github.com/ddvlanck/$REPO/blob/standaardenregister/$VALUE"
+    done
+  fi
+
+
+  cd /app
   if test -f "$DESCRIPTION" ; then
     echo "A description was provided for the $THEME_NAME repository"
     node html_page_generator.js -f "$REPO/$CONFIG" -o "$RESULTDIR/$STATUS/$(echo "$CONFIG" | cut -d "." -f 1)-index.html" -t "$ROOTDIR/descriptions/$THEME_NAME-description.html"

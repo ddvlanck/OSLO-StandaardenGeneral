@@ -4,9 +4,13 @@ REPODIR=$ROOTDIR/repositories
 
 mkdir -p "$ROOTDIR/descriptions"
 
+### Iterate over all repositories in /repositories
 for REPO in $(find "$REPODIR" -maxdepth 1 -mindepth 1 -type d)
 do
-  THEME_NAME=$(echo "$REPO" | cut -d "/" -f 5 | cut -d "-" -f 2,3)
+  # Get OSLOtheme name
+  THEME_NAME=$(echo "$REPO" | cut -d "/" -f 5 | cut -d "-" -f 2)
+
+  # The name of the configuration file contains information about the standard (if it's a voc or ap)
   CONFIG_NAME=$( cat "$ROOTDIR/configuration.txt" | grep "$THEME_NAME" | cut -d ":" -f 2 | cut -d "." -f 1)
   cd "$REPO"
   if test -f "README.md" ; then

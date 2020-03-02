@@ -32,7 +32,7 @@ fi
 #Process all standards that have been changed or were added
 echo "Start processing the standards"
 if cat "${PUBCONFIG}" | jq -e . >/dev/null 2>&1; then
-  # only iterate over those that have a repository
+  # Only iterate over those that have a repository
   for row in $(jq -r '.[] | select(.repository)  | @base64 ' "${PUBCONFIG}"); do
     _jq() {
       echo "${row}" | base64 --decode | jq -r "${1}"
@@ -49,11 +49,14 @@ if cat "${PUBCONFIG}" | jq -e . >/dev/null 2>&1; then
     mkdir -p "$ROOTDIR/repositories/$THEME_NAME"
 
     ### Save the status of the standard to a text file along with its name
+    ###### Needed in generator.sh
     echo "$CONFIG_NAME:$STATUS" >> "$ROOTDIR/status.txt"
 
     ### Save the configuration file for the standard to a text file along with its name
+    #### Needed in generator.sh
     echo "$THEME_NAME:$CONFIG" >> "$ROOTDIR/configuration.txt"
 
+    ### Cloning repository and checking out branch standaardenregister
     git clone "$REPOSITORY" "$ROOTDIR/repositories/$THEME_NAME"
     cd "$ROOTDIR/repositories/$THEME_NAME"
     git checkout standaardenregister
