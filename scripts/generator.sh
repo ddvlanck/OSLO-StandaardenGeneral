@@ -18,15 +18,16 @@ do
   CONFIG=$(cat "$ROOTDIR/configuration.txt" | grep "$THEME_NAME" | cut -d ":" -f 2)
 
   ## Read the config file of every standard en change the relative links of the documents to absolute links, linked to the repository itself
-  cd /$REPODIR/$REPO
+  ##TODO
+  #cd /$REPODIR/$REPO
 
   ### Presentatie values
-  if [ "$(jq '.presentatie | length' "$CONFIG") " -gt "0" ]; then
-    for k in $(jq '.presentaties | keys | .[]' "$CONFIG" ); do
-      VALUE=$(jq -r ".presentaties[$k].waarde" vocabularium-persoon.json | cut -d "/" -f 2,3)
-      jq ".presentaties[$k].waarde = https://github.com/ddvlanck/$REPO/blob/standaardenregister/$VALUE" "$CONFIG"
-    done
-  fi
+  #if [ "$(jq '.presentatie | length' "$CONFIG") " -gt "0" ]; then
+  #  for k in $(jq '.presentaties | keys | .[]' "$CONFIG" ); do
+  #    VALUE=$(jq -r ".presentaties[$k].waarde" vocabularium-persoon.json | cut -d "/" -f 2,3)
+  #    jq ".presentaties[$k].waarde = https://github.com/ddvlanck/$REPO/blob/standaardenregister/$VALUE" "$CONFIG"
+  #  done
+  #fi
 
 
   cd /app
