@@ -3,6 +3,8 @@
 PUBCONFIG=$2
 ROOTDIR=$1
 
+echo "I'm currently here $PWD"
+
 # Determine the last changed files
 mkdir -p "$ROOTDIR"
 curl -o "$ROOTDIR/commit.json" https://raw.githubusercontent.com/ddvlanck/OSLO-StandaardenGenerated/master/commit.json
