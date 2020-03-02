@@ -83,11 +83,11 @@ jobs:
             if [ -d html_pages/kandidaat-standaard ] ; then if [ ! "$(ls -A html_pages/kandidaat-standaard)" ] ; then echo "Directory html_pages/kandidaat-standaard is empty" ; else cp -R html_pages/kandidaat-standaard/* /tmp/OSLO-StandaardenGenerated/kandiaat-standaard/ ; fi fi
             if [ -d html_pages/standaard-in-ontwikkeling ] ; then if [ ! "$(ls -A html_pages/standaard-in-ontwikkeling)" ] ; then echo "Directory html_pages/standaard-in-ontwikkeling is empty" ; else cp -R html_pages/standaard-in-ontwikkeling/* /tmp/OSLO-StandaardenGenerated/standaard-in-ontwikkeling/ ; fi fi
 
-      #- run:
-      #    name: insert the commit
-      #    command: |
-      #      export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
-      #      echo "{\"commit\" : \"$TAG\"}" > /tmp/OSLO-Generated/report/commit.json
+      - run:
+          name: insert the commit
+          command: |
+            export TAG=`echo "${CIRCLE_SHA1}"`
+            echo "{\"commit\" : \"$TAG\"}" > /tmp/OSLO-Generated/commit.json
       - run:
           name: Push results to Github repository OSLO-Generated
           workdir: /tmp/OSLO-StandaardenGenerated
