@@ -24,7 +24,7 @@ do
   if [ "$(jq '.presentatie | length' "$CONFIG") " -gt "0" ]; then
     for k in $(jq '.presentaties | keys | .[]' "$CONFIG" ); do
       VALUE=$(jq -r ".presentaties[$k].waarde" vocabularium-persoon.json | cut -d "/" -f 2,3)
-      jq ".presentaties[$k].waarde = https://github.com/ddvlanck/$REPO/blob/standaardenregister/$VALUE"
+      jq ".presentaties[$k].waarde = https://github.com/ddvlanck/$REPO/blob/standaardenregister/$VALUE" "$CONFIG"
     done
   fi
 
