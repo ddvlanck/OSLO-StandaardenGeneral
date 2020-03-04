@@ -36,7 +36,7 @@ fi
 
 #Process all standards that have been changed or were added
 echo "Start processing the standards"
-if cat "${PUBCONFIG}" | jq -e . >/dev/null 2>&1; then
+if cat "$ROOTDIR/changedstandards.json" | jq -e . >/dev/null 2>&1; then
   # Only iterate over those that have a repository
   for row in $(jq -r '.[] | select(.repository)  | @base64 ' "${PUBCONFIG}"); do
     _jq() {
