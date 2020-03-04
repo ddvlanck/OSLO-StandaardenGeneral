@@ -17,7 +17,7 @@ if [ $? -eq 0 ]; then
   then
     echo "One or more standards were modified"
     echo "These standards were modified:"
-    git show "$COMMIT:standaardenregister.json" > previous_version
+    git show "$PREV_COMMIT:standaardenregister.json" > previous_version
     jq -s '.[0] - .[1]' standaardenregister.json previous_version
     jq -s '.[0] - .[1]' standaardenregister.json previous_version > "$ROOTDIR/changedstandards.json"
     cat "$ROOTDIR/changedstandards.json"
