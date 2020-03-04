@@ -72,6 +72,11 @@ jobs:
             git fetch origin
 #            if [ "`cat /tmp/workspace/haschangedpublications.json`" == "false" ] ; then git rm -r --force * ; fi
       - run:
+          name: Checking pages are in old directory (e.g. theme can now be standard instead of candidate-standard)
+          workdir: /tmp/workspace
+          command: |
+            bash $PWD/scripts/clean-generated-repository.sh
+      - run:
           name: Copy generated assets
           workdir: /tmp/workspace
           command: |
