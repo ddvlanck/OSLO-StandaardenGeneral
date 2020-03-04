@@ -16,7 +16,7 @@ if [ $? -eq 0 ]; then
   if [ "$changedFiles" == "standaardenregister.json" ]
   then
     git show "$COMMIT:standaardenregister.json" > previous_version
-    jq -s '.[0] - .[1]' standaardenregister.json previous_version >"$ROOTDIR/changedstandards.json"
+    jq -s '.[0] - .[1]' standaardenregister.json previous_version > "$ROOTDIR/changedstandards.json"
     cat "$ROOTDIR/changedstandards.json"
     echo "One or more standards were modified"
   else

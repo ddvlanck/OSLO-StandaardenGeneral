@@ -29,8 +29,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: /tmp/workspace
-      - run: chmod -R 777 $PWD/scripts
-      - run: $PWD/scripts/markdown-transformer.sh /tmp/workspace
+      - run: bash $PWD/scripts/markdown-transformer.sh /tmp/workspace
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
@@ -42,10 +41,9 @@ jobs:
       - checkout
       - attach_workspace:
           at: /tmp/workspace
-      - run: chmod -R 777 $PWD/scripts
       - run:
           name: Creating HTML pages for modified or new standards
-          command: $PWD/scripts/generator.sh
+          command: bash $PWD/scripts/generator.sh
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
