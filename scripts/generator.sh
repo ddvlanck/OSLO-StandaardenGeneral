@@ -10,12 +10,34 @@ mkdir -p "$RESULTDIR/kandidaat-standaard"
 
 mkdir -p "$RESULTDIR"
 
-for REPO in $(find "$REPODIR" -maxdepth 1 -mindepth 1 -type d)
+while IFS= read -r line
 do
-  THEME_NAME=$(echo "$REPO" | cut -d "/" -f 5 | cut -d "-" -f 2,3)
-  DESCRIPTION="$ROOTDIR/descriptions/$THEME_NAME-description.html"
-  STATUS=$(cat "$ROOTDIR/status.txt" | grep "$THEME_NAME" | cut -d ":" -f 2)
-  CONFIG=$(cat "$ROOTDIR/configuration.txt" | grep "$THEME_NAME" | cut -d ":" -f 2)
+  REPO_NAME=$(echo "$line" | cut -d ":" -f 1)
+  CONFIG=$(echo "$line" | cut -d ":" -f 2)
+  CONFIG_NAME=$(echo "$CONFIG" | cut -d "." -f 1)
+  STATUS=$(echo "$line" | cut -d ":" -f 3)
+
+  #cd "$REPODIR/$REPO_NAME"
+
+  ## CHANGE RELATIVE PATHS ##
+
+  cd /app
+  if test -f "$DESCRIPTION" ; then
+    echo "A description was provided for the $THEME_NAME repository"
+    node html_page_generator.js -f "$REPO/$CONFIG" -o "$RESULTDIR/$STATUS/$(echo "$CONFIG" | cut -d "." -f 1)-index.html" -t "$ROOTDIR/descriptions/$THEME_NAME-description.html"
+  else
+    echo "No description was provided for the $THEME_NAME repository"
+    node html_page_generator.js -f "$REPO/$CONFIG" -o "$RESULTDIR/$STATUS/$(echo "$CONFIG" | cut -d "." -f 1)-index.html"
+  fi
+
+done < "$ROOTDIR/tmp-register.txt"
+
+#for REPO in $(find "$REPODIR" -maxdepth 1 -mindepth 1 -type d)
+#do
+#  THEME_NAME=$(echo "$REPO" | cut -d "/" -f 5 | cut -d "-" -f 2,3)
+#  DESCRIPTION="$ROOTDIR/descriptions/$THEME_NAME-description.html"    ###### !!!!!! IS NOT THEME_NAME BUT CONFIG NAME !!!!!!! #####
+#  STATUS=$(cat "$ROOTDIR/status.txt" | grep "$THEME_NAME" | cut -d ":" -f 2)
+#  CONFIG=$(cat "$ROOTDIR/configuration.txt" | grep "$THEME_NAME" | cut -d ":" -f 2)
 
   ## Read the config file of every standard en change the relative links of the documents to absolute links, linked to the repository itself
   ##TODO
@@ -30,13 +52,13 @@ do
   #fi
 
 
-  cd /app
-  if test -f "$DESCRIPTION" ; then
-    echo "A description was provided for the $THEME_NAME repository"
-    node html_page_generator.js -f "$REPO/$CONFIG" -o "$RESULTDIR/$STATUS/$(echo "$CONFIG" | cut -d "." -f 1)-index.html" -t "$ROOTDIR/descriptions/$THEME_NAME-description.html"
-  else
-    echo "No description was provided for the $THEME_NAME repository"
-    node html_page_generator.js -f "$REPO/$CONFIG" -o "$RESULTDIR/$STATUS/$(echo "$CONFIG" | cut -d "." -f 1)-index.html"
-  fi
-done
+#  cd /app
+#  if test -f "$DESCRIPTION" ; then
+#    echo "A description was provided for the $THEME_NAME repository"
+#    node html_page_generator.js -f "$REPO/$CONFIG" -o "$RESULTDIR/$STATUS/$(echo "$CONFIG" | cut -d "." -f 1)-index.html" -t "$ROOTDIR/descriptions/$THEME_NAME-description.html"
+#  else
+#    echo "No description was provided for the $THEME_NAME repository"
+#    node html_page_generator.js -f "$REPO/$CONFIG" -o "$RESULTDIR/$STATUS/$(echo "$CONFIG" | cut -d "." -f 1)-index.html"
+#  fi
+#done
 

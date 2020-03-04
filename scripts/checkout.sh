@@ -53,13 +53,16 @@ if cat "$ROOTDIR/changedstandards.json" | jq -e . >/dev/null 2>&1; then
 
     mkdir -p "$ROOTDIR/repositories/$THEME_NAME"
 
+    ### We convert the standards register from JSON to a simple text file
+    echo "$THEME_NAME:$CONFIG:$STATUS" >> "$ROOTDIR/tmp-register.txt"
+
     ### Save the status of the standard to a text file along with its name
     ###### Needed in generator.sh
-    echo "$CONFIG_NAME:$STATUS" >> "$ROOTDIR/status.txt"
+    #echo "$CONFIG_NAME:$STATUS" >> "$ROOTDIR/status.txt"
 
     ### Save the configuration file for the standard to a text file along with its name
-    #### Needed in generator.sh
-    echo "$THEME_NAME:$CONFIG" >> "$ROOTDIR/configuration.txt"
+    #### Needed in generator.sh and markdown-transformer.txt
+    #echo "$THEME_NAME:$CONFIG" >> "$ROOTDIR/configuration.txt"
 
     ### Cloning repository and checking out branch standaardenregister
     git clone "$REPOSITORY" "$ROOTDIR/repositories/$THEME_NAME"
