@@ -15,7 +15,7 @@ do
   REPO_NAME=$(echo "$line" | cut -d ":" -f 1)
   CONFIG=$(echo "$line" | cut -d ":" -f 2)
   CONFIG_NAME=$(echo "$CONFIG" | cut -d "." -f 1)
-  DESCRIPTION="$ROOTDIR/descriptions/$REPO_NAME-description.html"
+  DESCRIPTION="$ROOTDIR/descriptions/$CONFIG_NAME-description.html"
   STATUS=$(echo "$line" | cut -d ":" -f 3)
 
   FULL_REPO_PATH="$REPODIR/$REPO_NAME"
@@ -27,7 +27,7 @@ do
   cd /app
   if test -f "$DESCRIPTION" ; then
     echo "A description was provided for the $THEME_NAME repository"
-    node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG" -o "$RESULTDIR/$STATUS/$CONFIG_NAME-index.html" -t "$ROOTDIR/descriptions/$REPO_NAME-description.html"
+    node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG" -o "$RESULTDIR/$STATUS/$CONFIG_NAME-index.html" -t "$DESCRIPTION"
   else
     echo "No description was provided for the $THEME_NAME repository"
     node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG" -o "$RESULTDIR/$STATUS/$CONFIG_NAME-index.html"
