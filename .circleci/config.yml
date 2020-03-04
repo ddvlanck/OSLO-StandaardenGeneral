@@ -21,6 +21,7 @@ jobs:
             - status.txt
             - commit.json
             - configuration.txt
+            - tmp-register.txt
             - repositories/
   markdown-to-html:
     docker:
