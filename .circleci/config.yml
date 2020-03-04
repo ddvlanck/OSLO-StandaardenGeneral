@@ -7,7 +7,6 @@ jobs:
       - checkout
       - run: mkdir -p workspace
       - run: ls -al workspace
-      - run: chmod -R 777 $PWD/scripts
       - run: $PWD/scripts/checkout.sh /tmp/workspace $PWD/standaardenregister.json
       - run:
           name: List the files which have been created
