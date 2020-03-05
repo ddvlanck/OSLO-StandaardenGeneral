@@ -15,8 +15,10 @@ then
   else
     for file in $(ls "$PAGES/erkende-standaard")
     do
+      echo "Processing following file in erkende-standaard: $file"
       if test -f $GENERATED/kandidaat-standaard/$file
       then
+        echo "      File exists in kandidaat-standaard, so delete it"
         rm $GENERATED/kandidaat-standaard/$file
       fi
     done
@@ -33,13 +35,16 @@ then
   else
     for file in $(ls "$PAGES/kandidaat-standaard")
     do
+      echo "Processing following file in kandidaat-standaard: $file"
       if test -f $GENERATED/standaard-in-ontwikkeling/$file
       then
+        echo "   File exists in standaard-in-ontwikkeling, so delete it"
         rm $GENERATED/standaard-in-ontwikkeling/$file
       fi
 
       if test -f $GENERATED/erkende-standaard/$file
       then
+        echo "    File exists in erkende-standaard, so delete it"
         rm $GENERATED/erkende-standaard/$file
       fi
     done
@@ -56,8 +61,10 @@ then
   else
     for file in $(ls "$PAGES/standaard-in-ontwikkeling")
     do
+      echo "Processing following file in standaard-in-ontwikkeling: $file"
       if test -f $GENERATED/kandidaat-standaard/$file
       then
+        echo "    File exists in kandidaat-standaard, so delete it"
         rm $GENERATED/kandidaat-standaard/$file
       fi
     done
