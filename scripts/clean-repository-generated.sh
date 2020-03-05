@@ -1,7 +1,7 @@
 
 
 PAGES=/tmp/workspace/html_pages
-GENERATED=/tmp/OSLO-Generated
+GENERATED=/tmp/OSLO-StandaardenGenerated
 
 
 
