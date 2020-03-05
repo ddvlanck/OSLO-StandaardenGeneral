@@ -21,7 +21,7 @@ do
   FULL_REPO_PATH="$REPODIR/$REPO_NAME"
   BASE_URL="https://github.com/ddvlanck/$REPO_NAME/raw/standaardenregister"
 
-  jq --arg BASE_URL "$BASE_URL" '. |= . + {"baseURL" : $BASE_URL}' "$CONFIG"
+  jq --arg BASE_URL "$BASE_URL" '. |= . + {"baseURL" : $BASE_URL}' "$FULL_REPO_PATH/$CONFIG"
 
 
   ## Go to HTML-page-generator
