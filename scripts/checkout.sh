@@ -38,7 +38,7 @@ fi
 echo "Start processing the standards"
 if cat "$ROOTDIR/changedstandards.json" | jq -e . >/dev/null 2>&1; then
   # Only iterate over those that have a repository
-  for row in $(jq -r '.[] | select(.repository)  | @base64 ' "${PUBCONFIG}"); do
+  for row in $(jq -r '.[] | select(.repository)  | @base64 ' "$ROOTDIR/changedstandards.json"); do
     _jq() {
       echo "${row}" | base64 --decode | jq -r "${1}"
     }
