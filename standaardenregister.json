@@ -8,7 +8,7 @@
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-persoon",
     "commitHash": "c2f49f1add2d2ef62fc3ffcb9e85936eec78f26f",
-    "status": "kandidaat-standaard",
+    "status": "erkende-standaard",
     "configuration": "vocabularium-persoon.json"
   },
   {
@@ -20,7 +20,7 @@
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-besluitvorming",
     "commitHash": "eaf99d8140d2fe32d767d88c1dbbcc5205af4222",
-    "status": "standaard-in-ontwikkeling",
+    "status": "erkende-standaard",
     "configuration": "vocabularium-besluitvorming.json"
   },
   {
