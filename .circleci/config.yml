@@ -18,9 +18,7 @@ jobs:
           root: /tmp/workspace
           paths:
             - changedstandards.json
-            - status.txt
             - commit.json
-            - configuration.txt
             - tmp-register.txt
             - repositories/
   markdown-to-html:
@@ -71,11 +69,7 @@ jobs:
           command: |
             git fetch origin
 #            if [ "`cat /tmp/workspace/haschangedpublications.json`" == "false" ] ; then git rm -r --force * ; fi
-      - run:
-          name: Checking pages are in old directory (e.g. theme can now be standard instead of candidate-standard)
-          workdir: /tmp/workspace
-          command: |
-            bash $PWD/scripts/clean-generated-repository.sh
+      - run: bash $PWD/scripts/clean-repository-generated.sh
       - run:
           name: Copy generated assets
           workdir: /tmp/workspace
