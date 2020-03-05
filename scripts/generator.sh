@@ -19,11 +19,9 @@ do
   STATUS=$(echo "$line" | cut -d ":" -f 3)
 
   FULL_REPO_PATH="$REPODIR/$REPO_NAME"
+  BASE_URL="https://github.com/ddvlanck/$REPO_NAME/raw/standaardenregister"
 
-  #cd "$REPODIR/$REPO_NAME"
-
-  ## CHANGE RELATIVE PATHS ##
-  #BASE_URL="https://github.com/ddvlanck/$REPO_NAME/tree/standaardenregister/"
+  jq --arg BASE_URL "$BASE_URL" '. |= . + {"baseURL" : $BASE_URL}' "$CONFIG"
 
 
   ## Go to HTML-page-generator
