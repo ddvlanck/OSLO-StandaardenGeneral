@@ -67,6 +67,11 @@ then
         echo "    File exists in kandidaat-standaard, so delete it"
         rm $GENERATED/kandidaat-standaard/$file
       fi
+      if test -f $GENERATED/erkende-standaard/$file
+      then
+        echo "    File exists in erkende-standaard, so delete it"
+        rm $GENERATED/erkende-standaard/$file
+      fi
     done
   fi
 fi
