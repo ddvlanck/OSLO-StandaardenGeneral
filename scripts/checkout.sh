@@ -65,6 +65,8 @@ if cat "$ROOTDIR/changedstandards.json" | jq -e . >/dev/null 2>&1; then
     BASE_URL="https://github.com/ddvlanck/$THEME_NAME/raw/standaardenregister"
     jq --arg BASE_URL "$BASE_URL" '. |= . + {"baseURL" : $BASE_URL}' "$CONFIG"
 
+    cat "$CONFIG"
+
   done
 else
   echo "Problem processing following file: ${PUBCONFIG}"
