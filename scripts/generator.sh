@@ -20,6 +20,9 @@ do
 
   FULL_REPO_PATH="$REPODIR/$REPO_NAME"
 
+  echo "Logging extended config file for $REPO_NAME:"
+  cat "$FULL_REPO_PATH/$CONFIG-extended.json"
+
   ## Go to HTML-page-generator
   cd /app
   if test -f "$DESCRIPTION" ; then
