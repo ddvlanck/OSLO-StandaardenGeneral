@@ -1,7 +1,5 @@
 #!/bin/bash
 
-apt-get install jq
-
 ROOTDIR=/tmp/workspace
 RESULTDIR=/tmp/workspace/html_pages
 REPODIR=/tmp/workspace/repositories
