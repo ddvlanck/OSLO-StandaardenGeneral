@@ -56,18 +56,14 @@ if cat "$ROOTDIR/changedstandards.json" | jq -e . >/dev/null 2>&1; then
     ### We convert the standards register from JSON to a simple text file
     echo "$THEME_NAME:$CONFIG:$STATUS" >> "$ROOTDIR/tmp-register.txt"
 
-    ### Save the status of the standard to a text file along with its name
-    ###### Needed in generator.sh
-    #echo "$CONFIG_NAME:$STATUS" >> "$ROOTDIR/status.txt"
-
-    ### Save the configuration file for the standard to a text file along with its name
-    #### Needed in generator.sh and markdown-transformer.txt
-    #echo "$THEME_NAME:$CONFIG" >> "$ROOTDIR/configuration.txt"
-
     ### Cloning repository and checking out branch standaardenregister
     git clone "$REPOSITORY" "$ROOTDIR/repositories/$THEME_NAME"
     cd "$ROOTDIR/repositories/$THEME_NAME"
     git checkout standaardenregister
+
+    # We extend the the configuration file for a specific file in a theme with the baseURL
+    BASE_URL="https://github.com/ddvlanck/$THEME_NAME/raw/standaardenregister"
+    jq --arg BASE_URL "$BASE_URL" '. |= . + {"baseURL" : $BASE_URL}' "$CONFIG"
 
   done
 else
