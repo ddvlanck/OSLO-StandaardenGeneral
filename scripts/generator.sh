@@ -20,6 +20,8 @@ do
 
   FULL_REPO_PATH="$REPODIR/$REPO_NAME"
 
+  echo "Logging configuration file of $REPO_NAME:"
+  cat "$FULL_REPO_PATH/$CONFIG"
 
 
   ## Go to HTML-page-generator
