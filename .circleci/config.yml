@@ -74,9 +74,9 @@ jobs:
           name: Copy generated assets
           workdir: /tmp/workspace
           command: |
-            mkdir -p /tmp/OSLO-StandaardenGenerated/erkende-standaard
-            mkdir -p /tmp/OSLO-StandaardenGenerated/kandidaat-standaard
-            mkdir -p /tmp/OSLO-StandaardenGenerated/standaard-in-ontwikkeling
+            mkdir -p /tmp/OSLO-StandaardenGenerated/public/erkende-standaard
+            mkdir -p /tmp/OSLO-StandaardenGenerated/public/kandidaat-standaard
+            mkdir -p /tmp/OSLO-StandaardenGenerated/public/standaard-in-ontwikkeling
             if [ -d html_pages/erkende-standaard ] ; then if [ ! "$(ls -A html_pages/erkende-standaard)" ] ; then echo "Directory html_pages/erkende-standaard is empty" ; else cp -R html_pages/erkende-standaard/* /tmp/OSLO-StandaardenGenerated/public/erkende-standaard/ ; fi fi
             if [ -d html_pages/kandidaat-standaard ] ; then if [ ! "$(ls -A html_pages/kandidaat-standaard)" ] ; then echo "Directory html_pages/kandidaat-standaard is empty" ; else cp -R html_pages/kandidaat-standaard/* /tmp/OSLO-StandaardenGenerated/public/kandidaat-standaard/ ; fi fi
             if [ -d html_pages/standaard-in-ontwikkeling ] ; then if [ ! "$(ls -A html_pages/standaard-in-ontwikkeling)" ] ; then echo "Directory html_pages/standaard-in-ontwikkeling is empty" ; else cp -R html_pages/standaard-in-ontwikkeling/* /tmp/OSLO-StandaardenGenerated/public/standaard-in-ontwikkeling/ ; fi fi
