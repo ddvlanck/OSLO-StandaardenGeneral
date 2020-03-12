@@ -1,8 +1,32 @@
 [
   {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-gebouwEnAdres",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "vocabularium-adres.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-gebouwEnAdres",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "applicatieprofiel-adresregister.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-gebouwEnAdres",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "vocabularium-gebouw.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-gebouwEnAdres",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "applicatieprofiel-gebouwenregister.json"
+  },
+  {
     "repository": "https://github.com/ddvlanck/OSLOthema-organisatie",
     "commitHash": "44eabb896737ee993ec38dd3e3f7a5c7ffb882c0",
-    "status": "kandidaat-standaard",
+    "status": "erkende-standaard",
     "configuration": "vocabularium-organisatie.json"
   },
   {
@@ -14,13 +38,13 @@
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-logies",
     "commitHash": "34011a4bd4bdf1f1233b24383198f2869616dc2a",
-    "status": "kandidaat-standaard",
+    "status": "erkende-standaard",
     "configuration": "vocabularium-logies.json"
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-besluitvorming",
     "commitHash": "eaf99d8140d2fe32d767d88c1dbbcc5205af4222",
-    "status": "kandidaat-standaard",
+    "status": "erkende-standaard",
     "configuration": "vocabularium-besluitvorming.json"
   },
   {
