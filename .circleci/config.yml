@@ -58,7 +58,7 @@ jobs:
           fingerprints:
             - "c1:60:33:1c:43:ce:00:5b:66:61:79:8b:67:d4:0c:28"
       - run:
-          name: Checkout target repo
+          name: Checkout target repository
           workdir: /tmp
           command: |
             rm -rf OSLO-StandaardenGenerated
