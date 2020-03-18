@@ -66,6 +66,18 @@
     "configuration": "vocabularium-toestemming.json"
   },
   {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-notificatie",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "applicatieprofiel-notificatie-basis.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-notificatie",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "vocabularium-notificatie.json"
+  },
+  {
     "repository": "https://github.com/ddvlanck/OSLOthema-organisatie",
     "commitHash": "44eabb896737ee993ec38dd3e3f7a5c7ffb882c0",
     "status": "erkende-standaard",
