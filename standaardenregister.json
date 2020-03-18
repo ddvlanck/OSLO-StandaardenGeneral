@@ -54,6 +54,18 @@
     "configuration" : "applicatieprofiel-vlaamse-codex.json"
   },
   {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-contactvoorkeuren",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "applicatieprofiel-contactvoorkeuren.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-contactvoorkeuren",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration": "vocabularium-toestemming.json"
+  },
+  {
     "repository": "https://github.com/ddvlanck/OSLOthema-organisatie",
     "commitHash": "44eabb896737ee993ec38dd3e3f7a5c7ffb882c0",
     "status": "erkende-standaard",
