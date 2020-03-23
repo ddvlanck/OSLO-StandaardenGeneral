@@ -102,6 +102,12 @@
     "configuration": "vocabularium-logies.json"
   },
   {
+    "repository": "https://github.com/ddvlanck/OSLOthema-logies",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "applicatieprofiel-logies-basis.json"
+  },
+  {
     "repository": "https://github.com/ddvlanck/OSLOthema-besluitvorming",
     "commitHash": "eaf99d8140d2fe32d767d88c1dbbcc5205af4222",
     "status": "erkende-standaard",
