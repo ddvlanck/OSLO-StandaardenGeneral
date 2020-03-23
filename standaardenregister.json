@@ -130,5 +130,11 @@
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "applicatieprofiel-generieke-terugmeldfaciliteit.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-GeneriekeHypermediaAPI",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "generieke-hypermedia-api.json"
   }
 ]
