@@ -108,12 +108,6 @@
     "configuration": "applicatieprofiel-logies-basis.json"
   },
   {
-    "repository": "https://github.com/ddvlanck/OSLOthema-besluitvorming",
-    "commitHash": "eaf99d8140d2fe32d767d88c1dbbcc5205af4222",
-    "status": "erkende-standaard",
-    "configuration": "vocabularium-besluitvorming.json"
-  },
-  {
     "repository": "https://github.com/ddvlanck/OSLOthema-melding",
     "commitHash": "52127f54a539ea90a3625c7d912c0e00033cf8c8",
     "status": "erkende-standaard",
