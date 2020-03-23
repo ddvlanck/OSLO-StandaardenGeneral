@@ -1,81 +1,81 @@
 [
   {
-    "repository" : "https://github.com/ddvlanck/OSLOthema-gebouwEnAdres",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "vocabularium-adres.json"
+    "repository": "https://github.com/ddvlanck/OSLOthema-gebouwEnAdres",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "vocabularium-adres.json"
   },
   {
-    "repository" : "https://github.com/ddvlanck/OSLOthema-gebouwEnAdres",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "applicatieprofiel-adresregister.json"
+    "repository": "https://github.com/ddvlanck/OSLOthema-gebouwEnAdres",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "applicatieprofiel-adresregister.json"
   },
   {
-    "repository" : "https://github.com/ddvlanck/OSLOthema-gebouwEnAdres",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "vocabularium-gebouw.json"
+    "repository": "https://github.com/ddvlanck/OSLOthema-gebouwEnAdres",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "vocabularium-gebouw.json"
   },
   {
-    "repository" : "https://github.com/ddvlanck/OSLOthema-gebouwEnAdres",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "applicatieprofiel-gebouwenregister.json"
+    "repository": "https://github.com/ddvlanck/OSLOthema-gebouwEnAdres",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "applicatieprofiel-gebouwenregister.json"
   },
   {
-    "repository" : "https://github.com/ddvlanck/OSLOthema-dienst",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "vocabularium-transactie.json"
+    "repository": "https://github.com/ddvlanck/OSLOthema-dienst",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "vocabularium-transactie.json"
   },
   {
-    "repository" : "https://github.com/ddvlanck/OSLOthema-dienst",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "applicatieprofiel-dienst-transactiemodel.json"
+    "repository": "https://github.com/ddvlanck/OSLOthema-dienst",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "applicatieprofiel-dienst-transactiemodel.json"
   },
   {
-    "repository" : "https://github.com/ddvlanck/OSLOthema-dienst",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "vocabularium-dienst.json"
+    "repository": "https://github.com/ddvlanck/OSLOthema-dienst",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "vocabularium-dienst.json"
   },
   {
-    "repository" : "https://github.com/ddvlanck/OSLOthema-dienst",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "applicatieprofiel-dienstencataloog.json"
+    "repository": "https://github.com/ddvlanck/OSLOthema-dienst",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "applicatieprofiel-dienstencataloog.json"
   },
   {
-    "repository" : "https://github.com/ddvlanck/OSLOthema-VlaamseCodex",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "applicatieprofiel-vlaamse-codex.json"
+    "repository": "https://github.com/ddvlanck/OSLOthema-VlaamseCodex",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "applicatieprofiel-vlaamse-codex.json"
   },
   {
-    "repository" : "https://github.com/ddvlanck/OSLOthema-contactvoorkeuren",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "applicatieprofiel-contactvoorkeuren.json"
+    "repository": "https://github.com/ddvlanck/OSLOthema-contactvoorkeuren",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "applicatieprofiel-contactvoorkeuren.json"
   },
   {
-    "repository" : "https://github.com/ddvlanck/OSLOthema-contactvoorkeuren",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
+    "repository": "https://github.com/ddvlanck/OSLOthema-contactvoorkeuren",
+    "commitHash": "",
+    "status": "erkende-standaard",
     "configuration": "vocabularium-toestemming.json"
   },
   {
-    "repository" : "https://github.com/ddvlanck/OSLOthema-notificatie",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "applicatieprofiel-notificatie-basis.json"
+    "repository": "https://github.com/ddvlanck/OSLOthema-notificatie",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "applicatieprofiel-notificatie-basis.json"
   },
   {
-    "repository" : "https://github.com/ddvlanck/OSLOthema-notificatie",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "vocabularium-notificatie.json"
+    "repository": "https://github.com/ddvlanck/OSLOthema-notificatie",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "vocabularium-notificatie.json"
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-organisatie",
@@ -85,7 +85,7 @@
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-persoon",
-    "commitHash": "60c05a040bbe1545b5fb0abc3ef4fb5cf766aa82",
+    "commitHash": "27f3b33cbf74ddbd7840e8c1d11a83b1b0be66d1",
     "status": "erkende-standaard",
     "configuration": "vocabularium-persoon.json"
   },
