@@ -85,7 +85,7 @@
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-persoon",
-    "commitHash": "27f3b33cbf74ddbd7840e8c1d11a83b1b0be66d1",
+    "commitHash": "d670cece90f3172f83f5249c8efea03e01841380",
     "status": "erkende-standaard",
     "configuration": "vocabularium-persoon.json"
   },
