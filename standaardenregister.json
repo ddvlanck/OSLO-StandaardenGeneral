@@ -202,5 +202,17 @@
     "commitHash" : "",
     "status" : "kandidaat-standaard",
     "configuration" : "applicatieprofiel-bedrijventerrein.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-dossier",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "vocabularium-dossier.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-dossier",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "applicatieprofiel-dossier.json"
   }
 ]
