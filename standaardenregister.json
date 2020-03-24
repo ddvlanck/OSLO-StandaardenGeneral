@@ -160,5 +160,11 @@
     "commitHash" : "",
     "status" : "erkende-standaard",
     "configuration" : "applicatieprofiel-mandatendatabank.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-weg",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "vocabularium-weg.json"
   }
 ]
