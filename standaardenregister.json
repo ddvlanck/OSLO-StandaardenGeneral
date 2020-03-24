@@ -207,12 +207,14 @@
     "repository" : "https://github.com/ddvlanck/OSLOthema-dossier",
     "commitHash" : "",
     "status" : "kandidaat-standaard",
+    "description" : "vocabularium-dossier.md",
     "configuration" : "vocabularium-dossier.json"
   },
   {
     "repository" : "https://github.com/ddvlanck/OSLOthema-dossier",
     "commitHash" : "",
     "status" : "kandidaat-standaard",
+    "description" : "applicatieprofiel-dossier.md",
     "configuration" : "applicatieprofiel-dossier.json"
   }
 ]

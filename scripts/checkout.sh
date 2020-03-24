@@ -55,7 +55,7 @@ if cat "$ROOTDIR/changedstandards.json" | jq -e . >/dev/null 2>&1; then
     mkdir -p "$ROOTDIR/repositories/$THEME_NAME"
 
     ### We convert the standards register from JSON to a simple text file
-    echo "$THEME_NAME:$CONFIG:$STATUS" >> "$ROOTDIR/tmp-register.txt"
+    echo "$THEME_NAME:$CONFIG:$STATUS:$DESCRIPTION_NAME" >> "$ROOTDIR/tmp-register.txt"
 
     ### Cloning repository and checking out branch standaardenregister
     git clone "$REPOSITORY" "$ROOTDIR/repositories/$THEME_NAME"
