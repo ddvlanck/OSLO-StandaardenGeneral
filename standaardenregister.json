@@ -178,5 +178,29 @@
     "commitHash" : "",
     "status" : "kandidaat-standaard",
     "configuration" : "applicatieprofiel-inname-openbaar-domein.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-perceel",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "vocabularium-perceel.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-perceel",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "vocabularium-bedrijventerrein.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-perceel",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "applicatieprofiel-perceel.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-perceel",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "applicatieprofiel-bedrijventerrein.json"
   }
 ]
