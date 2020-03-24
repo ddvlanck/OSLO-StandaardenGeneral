@@ -48,6 +48,7 @@ if cat "$ROOTDIR/changedstandards.json" | jq -e . >/dev/null 2>&1; then
     STATUS=$(_jq '.status')
     CONFIG=$(_jq '.configuration')
     CONFIG_NAME=$(echo "$CONFIG" | cut -d "." -f 1)
+    DESCRIPTION_NAME=$(_jq '.description')
 
     THEME_NAME=$(echo "$REPOSITORY" | cut -d '/' -f 5)
 
