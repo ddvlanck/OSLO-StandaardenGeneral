@@ -166,5 +166,11 @@
     "commitHash" : "",
     "status" : "erkende-standaard",
     "configuration" : "vocabularium-weg.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-weg",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "applicatieprofiel-wegenregister.json"
   }
 ]
