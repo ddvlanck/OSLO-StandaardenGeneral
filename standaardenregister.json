@@ -172,5 +172,11 @@
     "commitHash" : "",
     "status" : "kandidaat-standaard",
     "configuration" : "applicatieprofiel-wegenregister.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-innameOpenbaarDomein",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "applicatieprofiel-inname-openbaar-domein.json"
   }
 ]
