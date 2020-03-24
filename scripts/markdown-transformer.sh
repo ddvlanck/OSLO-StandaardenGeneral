@@ -15,7 +15,6 @@ do
 
   CONFIG_NAME=$(echo "$line" | cut -d ":" -f 2 | cut -d "." -f 1)
   if test -f "$DESCRIPTION_PATH" ; then
-    echo "FOUND A DESRIPTION FOR $REPO_NAME"
-    #node /app/index.js -f README.md -o "$ROOTDIR/descriptions/$CONFIG_NAME-description.html"
+    node /app/index.js -f "$DESCRIPTION_PATH" -o "$ROOTDIR/descriptions/$CONFIG_NAME-description.html"
   fi
 done < "$ROOTDIR/tmp-register.txt"
