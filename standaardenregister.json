@@ -69,12 +69,14 @@
     "repository": "https://github.com/ddvlanck/OSLOthema-notificatie",
     "commitHash": "",
     "status": "erkende-standaard",
+    "description" : "applicatieprofiel-notificatie-basis.md",
     "configuration": "applicatieprofiel-notificatie-basis.json"
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-notificatie",
     "commitHash": "",
     "status": "erkende-standaard",
+    "description" : "vocabularium-notificatie.md",
     "configuration": "vocabularium-notificatie.json"
   },
   {
