@@ -136,5 +136,29 @@
     "commitHash" : "",
     "status" : "erkende-standaard",
     "configuration" : "generieke-hypermedia-api.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-lokaleBesluiten",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "vocabularium-besluit.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-lokaleBesluiten",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "vocabularium-mandaat.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-lokaleBesluiten",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "applicatieprofiel-besluit-publicatie.json"
+  },
+  {
+    "repository" : "https://github.com/ddvlanck/OSLOthema-lokaleBesluiten",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "applicatieprofiel-mandatendatabank.json"
   }
 ]
