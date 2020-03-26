@@ -23,7 +23,7 @@ jobs:
             - repositories/
   markdown-to-html:
     docker:
-      - image: ddvlanck/markdown-to-html:1.0.0
+      - image: ddvlanck/markdown-to-html:1.1
     steps:
       - checkout
       - attach_workspace:
