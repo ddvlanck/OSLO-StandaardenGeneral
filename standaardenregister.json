@@ -59,6 +59,7 @@
     "repository": "https://github.com/ddvlanck/OSLOthema-VlaamseCodex",
     "commitHash": "",
     "status": "erkende-standaard",
+    "description" : "ap-vlaamse-codex.md",
     "configuration": "applicatieprofiel-vlaamse-codex.json"
   },
   {
