@@ -122,12 +122,14 @@
     "repository": "https://github.com/ddvlanck/OSLOthema-logies",
     "commitHash": "34011a4bd4bdf1f1233b24383198f2869616dc2a",
     "status": "erkende-standaard",
+    "description" : "vocabularium-logies.md",
     "configuration": "vocabularium-logies.json"
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-logies",
     "commitHash": "",
     "status": "erkende-standaard",
+    "description" : "ap-logies-basis.md",
     "configuration": "applicatieprofiel-logies-basis.json"
   },
   {
