@@ -66,12 +66,14 @@
     "repository": "https://github.com/ddvlanck/OSLOthema-contactvoorkeuren",
     "commitHash": "",
     "status": "erkende-standaard",
+    "description" : "ap-contactvoorkeuren.md",
     "configuration": "applicatieprofiel-contactvoorkeuren.json"
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-contactvoorkeuren",
     "commitHash": "",
     "status": "erkende-standaard",
+    "description" : "vocabularium-toestemming.md",
     "configuration": "vocabularium-toestemming.json"
   },
   {
