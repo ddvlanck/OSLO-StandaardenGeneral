@@ -3,24 +3,28 @@
     "repository": "https://github.com/ddvlanck/OSLOthema-gebouwEnAdres",
     "commitHash": "",
     "status": "erkende-standaard",
+    "description": "vocabularium-adres.md",
     "configuration": "vocabularium-adres.json"
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-gebouwEnAdres",
     "commitHash": "",
     "status": "kandidaat-standaard",
+    "description" : "adresregister.md",
     "configuration": "applicatieprofiel-adresregister.json"
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-gebouwEnAdres",
     "commitHash": "",
     "status": "kandidaat-standaard",
+    "description" : "vocabularium-gebouwd.md",
     "configuration": "vocabularium-gebouw.json"
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-gebouwEnAdres",
     "commitHash": "",
     "status": "kandidaat-standaard",
+    "description" : "gebouwregister.md",
     "configuration": "applicatieprofiel-gebouwenregister.json"
   },
   {
