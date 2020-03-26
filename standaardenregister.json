@@ -108,12 +108,14 @@
     "repository": "https://github.com/ddvlanck/OSLOthema-persoon",
     "commitHash": "8d8093faf9b9e7119c78312c7178e42913dcff75",
     "status": "erkende-standaard",
+    "description" : "vocabularium-persoon.md",
     "configuration": "vocabularium-persoon.json"
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-persoon",
     "commitHash": "",
     "status": "kandidaat-standaard",
+    "description" : "ap-persoon-basis.md",
     "configuration": "applicatieprofiel-persoon-basis.json"
   },
   {
