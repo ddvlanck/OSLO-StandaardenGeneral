@@ -31,24 +31,28 @@
     "repository": "https://github.com/ddvlanck/OSLOthema-dienst",
     "commitHash": "",
     "status": "erkende-standaard",
+    "description" : "vocabularium-transactie.md",
     "configuration": "vocabularium-transactie.json"
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-dienst",
     "commitHash": "",
     "status": "erkende-standaard",
+    "description" : "ap-dienst-transactiemodel.md",
     "configuration": "applicatieprofiel-dienst-transactiemodel.json"
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-dienst",
     "commitHash": "",
     "status": "erkende-standaard",
+    "description" : "vocabularium-dienst.md",
     "configuration": "vocabularium-dienst.json"
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-dienst",
     "commitHash": "",
     "status": "kandidaat-standaard",
+    "description" : "ap-dienstencataloog.md",
     "configuration": "applicatieprofiel-dienstencataloog.json"
   },
   {
