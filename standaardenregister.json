@@ -94,12 +94,14 @@
     "repository": "https://github.com/ddvlanck/OSLOthema-organisatie",
     "commitHash": "44eabb896737ee993ec38dd3e3f7a5c7ffb882c0",
     "status": "erkende-standaard",
+    "description" : "vocabularim-organisatie.md",
     "configuration": "vocabularium-organisatie.json"
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-organisatie",
     "commitHash": "",
     "status": "kandidaat-standaard",
+    "description" : "ap-organisatie-basis.md",
     "configuration": "applicatieprofiel-organisatie-basis.json"
   },
   {
