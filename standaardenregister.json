@@ -164,24 +164,28 @@
     "repository" : "https://github.com/ddvlanck/OSLOthema-lokaleBesluiten",
     "commitHash" : "",
     "status" : "erkende-standaard",
+    "description" : "vocabularium-besluit.md",
     "configuration" : "vocabularium-besluit.json"
   },
   {
     "repository" : "https://github.com/ddvlanck/OSLOthema-lokaleBesluiten",
     "commitHash" : "",
     "status" : "erkende-standaard",
+    "description" : "vocabularium-mandaat.md",
     "configuration" : "vocabularium-mandaat.json"
   },
   {
     "repository" : "https://github.com/ddvlanck/OSLOthema-lokaleBesluiten",
     "commitHash" : "",
     "status" : "erkende-standaard",
+    "description" : "ap-besluit-publicatie.md",
     "configuration" : "applicatieprofiel-besluit-publicatie.json"
   },
   {
     "repository" : "https://github.com/ddvlanck/OSLOthema-lokaleBesluiten",
     "commitHash" : "",
     "status" : "erkende-standaard",
+    "description" : "ap-mandatendatabank.md",
     "configuration" : "applicatieprofiel-mandatendatabank.json"
   },
   {
