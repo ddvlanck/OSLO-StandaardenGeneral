@@ -253,7 +253,7 @@
   },
   {
     "repository" : "https://github.com/ddvlanck/OSLOthema-besluitvorming",
-    "commitHash" : "e9740853aa2d7d6f77a65e07e505b6964af2864c",
+    "commitHash" : "e8972ae5e8067348da1243eafb574c4e045fa6af",
     "status" : "standaard-in-ontwikkeling",
     "description" : "voc-ap-besluitvorming.md",
     "configuration" : "voc-ap-besluitvorming.json"
