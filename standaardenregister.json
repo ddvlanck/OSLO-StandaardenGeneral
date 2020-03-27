@@ -213,24 +213,28 @@
     "repository" : "https://github.com/ddvlanck/OSLOthema-perceel",
     "commitHash" : "",
     "status" : "kandidaat-standaard",
+    "description" : "vocabularium-perceel.md",
     "configuration" : "vocabularium-perceel.json"
   },
   {
     "repository" : "https://github.com/ddvlanck/OSLOthema-perceel",
     "commitHash" : "",
     "status" : "kandidaat-standaard",
+    "description" : "vocabularium-bedrijventerrein.md",
     "configuration" : "vocabularium-bedrijventerrein.json"
   },
   {
     "repository" : "https://github.com/ddvlanck/OSLOthema-perceel",
     "commitHash" : "",
     "status" : "kandidaat-standaard",
+    "description" : "ap-perceel.md",
     "configuration" : "applicatieprofiel-perceel.json"
   },
   {
     "repository" : "https://github.com/ddvlanck/OSLOthema-perceel",
     "commitHash" : "",
     "status" : "kandidaat-standaard",
+    "description" : "ap-bedrijventerrein.md",
     "configuration" : "applicatieprofiel-bedrijventerrein.json"
   },
   {
