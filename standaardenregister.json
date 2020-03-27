@@ -157,6 +157,7 @@
     "repository" : "https://github.com/ddvlanck/OSLOthema-GeneriekeHypermediaAPI",
     "commitHash" : "",
     "status" : "erkende-standaard",
+    "description" : "generieke-hypermedia-api.md",
     "configuration" : "generieke-hypermedia-api.json"
   },
   {
