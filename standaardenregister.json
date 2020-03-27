@@ -136,18 +136,21 @@
     "repository": "https://github.com/ddvlanck/OSLOthema-melding",
     "commitHash": "52127f54a539ea90a3625c7d912c0e00033cf8c8",
     "status": "erkende-standaard",
+    "description" : "vocabularium-melding.md",
     "configuration": "vocabularium-melding.json"
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-melding",
     "commitHash": "",
     "status": "erkende-standaard",
+    "description" : "ap-issue-tracking.md",
     "configuration": "applicatieprofiel-issue-tracking.json"
   },
   {
     "repository": "https://github.com/ddvlanck/OSLOthema-melding",
     "commitHash": "",
     "status": "erkende-standaard",
+    "description" : "ap-generieke-terugmeldfaciliteit.md",
     "configuration": "applicatieprofiel-generieke-terugmeldfaciliteit.json"
   },
   {
