@@ -206,6 +206,7 @@
     "repository" : "https://github.com/ddvlanck/OSLOthema-innameOpenbaarDomein",
     "commitHash" : "",
     "status" : "kandidaat-standaard",
+    "description" : "ap-inname-openbaar-domein.md",
     "configuration" : "applicatieprofiel-inname-openbaar-domein.json"
   },
   {
